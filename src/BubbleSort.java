@@ -1,9 +1,13 @@
 public class BubbleSort {  
-    static void bubbleSort(int[] arr) {  
+    static void bubbleSort(int[] arr) { 
+    	
         int n = arr.length;  
         int temp = 0;  
+        
          for(int i=0; i < n; i++){  
+        	 
                  for(int j=1; j < (n-i); j++){  
+                	 
                           if(arr[j-1] > arr[j]){  
                                  //swap elements  
                                  temp = arr[j-1];  
@@ -24,9 +28,10 @@ public class BubbleSort {
                 }  
                 System.out.println();  
                   
-                bubbleSort(arr);//sorting array elements using bubble sort  
+                bubbleSort(arr);
                  
-                System.out.println("Array After Bubble Sort");  
+                System.out.println("Array After Bubble Sort"); 
+                
                 for(int i=0; i < arr.length; i++){  
                         System.out.print(arr[i] + " ");  
                 }  
